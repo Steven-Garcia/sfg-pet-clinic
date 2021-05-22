@@ -1,4 +1,4 @@
-package mckenzie.springframework.sfgpetclinic.model;
+package mckenzie.springframework.sftpetclinic.model;
 
 import java.time.LocalDate;
 
