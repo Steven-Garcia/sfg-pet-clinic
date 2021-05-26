@@ -3,9 +3,9 @@ package mckenzie.springframework.sftpetclinic.services.map;
 import java.util.Set;
 
 import mckenzie.springframework.sftpetclinic.model.Vet;
-import mckenzie.springframework.sftpetclinic.services.CrudService;
+import mckenzie.springframework.sftpetclinic.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
