@@ -1,4 +1,4 @@
-package mckenzie.springframework.sftpetclinic.model;
+package mckenzie.springframework.sfgpetclinic.model;
 
 import java.io.Serializable;
 

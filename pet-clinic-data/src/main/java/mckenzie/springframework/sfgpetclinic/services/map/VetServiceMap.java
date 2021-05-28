@@ -1,10 +1,13 @@
-package mckenzie.springframework.sftpetclinic.services.map;
+package mckenzie.springframework.sfgpetclinic.services.map;
+
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-import mckenzie.springframework.sftpetclinic.model.Vet;
-import mckenzie.springframework.sftpetclinic.services.VetService;
+import mckenzie.springframework.sfgpetclinic.model.Vet;
+import mckenzie.springframework.sfgpetclinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
@@ -24,7 +27,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

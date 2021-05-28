@@ -1,4 +1,4 @@
-package mckenzie.springframework.sftpetclinic.services;
+package mckenzie.springframework.sfgpetclinic.services;
 
 import java.util.Set;
 

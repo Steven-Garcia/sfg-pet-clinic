@@ -1,10 +1,13 @@
-package mckenzie.springframework.sftpetclinic.services.map;
+package mckenzie.springframework.sfgpetclinic.services.map;
+
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-import mckenzie.springframework.sftpetclinic.model.Owner;
-import mckenzie.springframework.sftpetclinic.services.OwnerService;
+import mckenzie.springframework.sfgpetclinic.model.Owner;
+import mckenzie.springframework.sfgpetclinic.services.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
@@ -24,7 +27,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner save(Owner owner){
-        return super.save(owner.getId(), owner);
+        return super.save(owner);
     }
 
     @Override

@@ -1,10 +1,13 @@
-package mckenzie.springframework.sftpetclinic.services.map;
+package mckenzie.springframework.sfgpetclinic.services.map;
+
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-import mckenzie.springframework.sftpetclinic.model.Pet;
-import mckenzie.springframework.sftpetclinic.services.CrudService;
+import mckenzie.springframework.sfgpetclinic.model.Pet;
+import mckenzie.springframework.sfgpetclinic.services.CrudService;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
     @Override
@@ -24,7 +27,7 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements Crud
 
     @Override
     public Pet save(Pet object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

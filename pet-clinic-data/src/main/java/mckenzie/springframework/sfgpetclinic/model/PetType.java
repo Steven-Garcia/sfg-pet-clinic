@@ -1,4 +1,4 @@
-package mckenzie.springframework.sftpetclinic.model;
+package mckenzie.springframework.sfgpetclinic.model;
 
 public class PetType extends BaseEntity {
 
